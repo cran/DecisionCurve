@@ -1,8 +1,8 @@
 Package: DecisionCurve
 Type: Package
 Title: Calculate and Plot Decision Curves
-Version: 1.1
-Date: 2016-01-01
+Version: 1.3
+Date: 2016-08-11
 Author: Marshall Brown
 Maintainer: Marshall Brown <mdbrown@fredhutch.org>
 Description: Decision curves are a useful tool to evaluate the population impact
@@ -22,6 +22,6 @@ LazyData: TRUE
 Imports: reshape, pander, MASS, caret
 RoxygenNote: 5.0.1
 NeedsCompilation: no
-Packaged: 2016-01-13 18:31:40 UTC; mdbrown
+Packaged: 2016-08-11 19:09:44 UTC; mdbrown
 Repository: CRAN
-Date/Publication: 2016-01-13 23:01:53
+Date/Publication: 2016-08-12 08:58:01
