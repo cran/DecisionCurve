@@ -5,18 +5,20 @@
 \title{Add cost benefit ratio axis to a decision curve plot.}
 \usage{
 Add_CostBenefit_Axis(xlim, cost.benefits, n.cost.benefits = 6, line = 4,
-  ...)
+  policy, ...)
 }
 \arguments{
 \item{xlim}{range of x-axis.}
 
-\item{cost.benefits}{Character vector of the form c("c1:b1", "c2:b2", ..., "cn:bn") with integers ci, bi corresponding to specific cost:benefit ratios to print.}
+\item{cost.benefits}{Character vector of the form c('c1:b1', 'c2:b2', ..., 'cn:bn') with integers ci, bi corresponding to specific cost:benefit ratios to print.}
 
 \item{n.cost.benefits}{number of cost:benefit ratios to print if cost.benefit.axis = TRUE (default n.cost.benefit = 6).}
 
 \item{line}{x-axis line to print the axis (default is 4).}
 
-\item{...}{other options sent to `axis`.}
+\item{policy}{Either 'opt-in' (default) or 'opt-out', describing the type of policy for which to report the net benefit. A policy is 'opt-in' when the standard-of-care for a population is to assign a particular 'treatment' to no one. Clinicians then use a risk model to categorize patients as 'high-risk', with the recommendation to treat high-risk patients with some intervention. Alternatively, an 'opt-out' policy is applicable to contexts where the standard-of-care is to recommend a treatment to an entire patient population. The potential use of a risk model in this setting is to identify patients who are 'low-risk' and recommend that those patients 'opt-out' of treatment.}
+
+\item{...}{other options sent to 'axis'.}
 }
 \value{
 List with components threshold, value and name.
@@ -27,4 +29,3 @@ Add cost benefit ratio axis to a decision curve plot.
 \seealso{
 \code{\link{summary.decision_curve}},  \code{\link{decision_curve}}
 }
-
